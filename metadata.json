@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos7qga",
+    "Slug": "datamol-smiles2canonical",
+    "Status": "In progress",
+    "Title": "Converter of SMILES in Canonical form",
+    "Description": "Functionality model combined with other python libraries like DATAMOL to convert SMILES into their canonical form. It is intended in this model to implement the Datamol preprocessing as an individual model.",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,11 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "datamol",
+        "standardize_smiles"
+    ],
+    "Publication": "https://doc.datamol.io/stable/tutorials/Preprocessing.html",
+    "Source Code": "https://github.com/datamol-org/datamol",
+    "License": "Under the Apache-2.0 license"
 }
