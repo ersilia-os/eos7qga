@@ -2,21 +2,20 @@
     "Identifier": "eos7qga",
     "Slug": "datamol-smiles2canonical",
     "Status": "In progress",
-    "Title": "Converter of SMILES in Canonical form",
-    "Description": "Functionality model combined with other python libraries like DATAMOL to convert SMILES into their canonical form. It is intended in this model to implement the Datamol preprocessing as an individual model.",
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
+    "Title": "Converter of SMILES in Canonical, Selfie, Inchi, Inchi Key form",
+    "Description": "This implementation presents 4 ways in which molecules can be represented given a smile using the DATAMOL package. This model receives a SMILE as input, then goes through a process of disinfection and standardization of the molecule, to generate Canonical smiles, selfies, inchi and inchi key (the newest version of inchi).",
+    "Mode": "Pretrained",
+    "Task": ["Representation"],
+    "Input": ["Compound"],
+    "Input Shape": "Single",
+    "Output": ["Compound"],
+    "Output Type": ["String"],
+    "Output Shape": "Matrix",
+    "Interpretation": "In this implementation, python version 3.8 is used to be able to work with the Datamol python library. For the preprocessing of a molecule, everything that involves the process of sanitizing and standardizing to obtain the representation forms of a smile. Datamol provides a function called _preprocess, given a smile, it converts to a mole, corrects the errors, sanitizes it and standardizes, returning a molecule ready to be converted into its canonical representation, selfies, inchi and inchi key. The default values used for sanitize de mol were: For the snitize_mol function: the default parameters were: sanifix= True and charge_neutral=False. For standardize_mol, the default parameters were: disconnect_metals=False, normalize=True, reionize=True, uncharge=False, stereo=True",
     "Tag": [
-        "datamol",
-        "standardize_smiles"
+        "Chemical notation"
     ],
     "Publication": "https://doc.datamol.io/stable/tutorials/Preprocessing.html",
     "Source Code": "https://github.com/datamol-org/datamol",
-    "License": "Under the Apache-2.0 license"
+    "License": "Apache-2.0"
 }
