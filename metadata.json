@@ -14,10 +14,7 @@
     "Interpretation": "In this implementation, python version 3.8 is used to be able to work with the Datamol python library. For the preprocessing of a molecule, everything that involves the process of sanitizing and standardizing to obtain the representation forms of a smile. Datamol provides a function called _preprocess, given a smile, it converts to a mole, corrects the errors, sanitizes it and standardizes, returning a molecule ready to be converted into its canonical representation, selfies, inchi and inchi key. The default values used for sanitize de mol were: For the snitize_mol function: the default parameters were: sanifix= True and charge_neutral=False. For standardize_mol, the default parameters were: disconnect_metals=False, normalize=True, reionize=True, uncharge=False, stereo=True",
     "Tag": [
         "datamol",
-        "standardize_smiles",
-        "selfies_smiles",
-        "inchi_smiles",
-        "inchi_key_smiles"
+        "standardize_smiles"
     ],
     "Publication": "https://doc.datamol.io/stable/tutorials/Preprocessing.html",
     "Source Code": "https://github.com/datamol-org/datamol",
