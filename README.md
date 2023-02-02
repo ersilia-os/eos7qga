@@ -1,6 +1,6 @@
 # Converter of SMILES in Canonical, Selfie, Inchi, Inchi Key form
 
-This implementation presents 4 ways in which molecules can be represented given a smile using the DATAMOL package. This model receives a SMILE as input, then goes through a process of disinfection and standardization of the molecule, to generate Canonical smiles, selfies, inchi and inchi key (the newest version of inchi).
+Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey
 
 ## Identifiers
 
@@ -15,7 +15,7 @@ This implementation presents 4 ways in which molecules can be represented given 
 * Output: `Compound`
 * Output Type: `String`
 * Output Shape: `Matrix`
-* Interpretation: In this implementation, python version 3.8 is used to be able to work with the Datamol python library. For the preprocessing of a molecule, everything that involves the process of sanitizing and standardizing to obtain the representation forms of a smile. Datamol provides a function called _preprocess, given a smile, it converts to a mole, corrects the errors, sanitizes it and standardizes, returning a molecule ready to be converted into its canonical representation, selfies, inchi and inchi key. The default values used for sanitize de mol were: For the snitize_mol function: the default parameters were: sanifix= True and charge_neutral=False. For standardize_mol, the default parameters were: disconnect_metals=False, normalize=True, reionize=True, uncharge=False, stereo=True
+* Interpretation: Compound represented in its canonical SMILES, SELFIES, InChI and InChIKey forms
 
 ## References
 
