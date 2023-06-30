@@ -23,6 +23,11 @@ Using the Datamol package, the model receives a SMILE as input, then goes throug
 * [Source Code](https://github.com/datamol-org/datamol)
 * Ersilia contributor: [carcablop](https://github.com/carcablop)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos7qga)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos7qga) (AMD64, ARM64)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://doc.datamol.io/stable/tutorials/Preprocessing.html) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
