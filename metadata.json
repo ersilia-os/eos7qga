@@ -2,7 +2,7 @@
     "Identifier": "eos7qga",
     "Slug": "datamol-smiles2canonical",
     "Status": "Ready",
-    "Title": "Converter of SMILES in Canonical, Selfie, Inchi, Inchi Key form",
+    "Title": "Converter of SMILES in Canonical, Selfie, Inchi Key form",
     "Description": "Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey",
     "Deployment": [
         "Local"
@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 3,
     "Output Consistency": "Fixed",
-    "Interpretation": "Compound represented in its canonical SMILES, SELFIES, InChI and InChIKey forms",
+    "Interpretation": "Compound represented in its canonical SMILES, SELFIES, and InChIKey forms",
     "Tag": [
         "Chemical notation"
     ],
@@ -46,12 +46,5 @@
     "Docker Pack Method": "FastAPI",
     "Model Size": 1.0,
     "Environment Size": 727.0,
-    "Image Size": 672.77,
-    "Computational Performance 4": "null",
-    "Computational Performance 7": "null",
-    "Computational Performance 12": "null",
-    "Computational Performance 20": "null",
-    "Computational Performance 34": "null",
-    "Computational Performance 58": "null",
-    "Computational Performance 100": "null"
+    "Image Size": 672.77
 }
