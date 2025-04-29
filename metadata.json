@@ -18,7 +18,7 @@
     "Output": [
         "Compound"
     ],
-    "Output Dimension": 4,
+    "Output Dimension": 3,
     "Output Consistency": "Fixed",
     "Interpretation": "Compound represented in its canonical SMILES, SELFIES, InChI and InChIKey forms",
     "Tag": [
