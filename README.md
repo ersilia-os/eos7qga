@@ -2,44 +2,81 @@
 
 Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey
 
-## Identifiers
+This model was incorporated on 2023-01-25.
 
-* EOS model ID: `eos7qga`
-* Slug: `datamol-smiles2canonical`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos7qga`
+- **Slug:** `datamol-smiles2canonical`
 
-## Characteristics
+### Domain
+- **Task:** `Representation`
+- **Subtask:** `Featurization`
+- **Biomedical Area:** `Any`
+- **Target Organism:** `Not Applicable`
+- **Tags:** `Chemical notation`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Representation`
-* Output: `Compound`
-* Output Type: `String`
-* Output Shape: `Matrix`
-* Interpretation: Compound represented in its canonical SMILES, SELFIES, InChI and InChIKey forms
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `4`
+- **Output Consistency:** `Fixed`
+- **Interpretation:** Compound represented in its canonical SMILES, SELFIES, InChI and InChIKey forms
 
-* [Publication](https://doc.datamol.io/stable/tutorials/Preprocessing.html)
-* [Source Code](https://github.com/datamol-org/datamol)
-* Ersilia contributor: [carcablop](https://github.com/carcablop)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| standard_smiles | string |  | SMILES in standard format |
+| selfie | string |  | SELFIES representation of the SMILES |
+| inchi | string |  | InChI representation of the SMILES |
+| inchikey | string |  | InChIKey representation of the SMILES |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos7qga)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos7qga) (AMD64, ARM64)
 
-## Citation
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7qga](https://hub.docker.com/r/ersiliaos/eos7qga)
+- **Docker Architecture:** `AMD64`, `ARM64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip)
 
-If you use this model, please cite the [original authors](https://doc.datamol.io/stable/tutorials/Preprocessing.html) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+### Resource Consumption
 
-## License
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a Apache-2.0 license.
+### References
+- **Source Code**: [https://github.com/datamol-org/datamol](https://github.com/datamol-org/datamol)
+- **Publication**: [https://doc.datamol.io/stable/tutorials/Preprocessing.html](https://doc.datamol.io/stable/tutorials/Preprocessing.html)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2022`
+- **Ersilia Contributor:** [carcablop](https://github.com/carcablop)
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [Apache-2.0](LICENSE) license.
 
-## About Us
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos7qga
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos7qga
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
+
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
