@@ -30,7 +30,6 @@ Below are the **Output Columns** of the model:
 |------|------|-----------|-------------|
 | standard_smiles | string |  | SMILES in standard format |
 | selfie | string |  | SELFIES representation of the SMILES |
-| inchi | string |  | InChI representation of the SMILES |
 | inchikey | string |  | InChIKey representation of the SMILES |
 
 
