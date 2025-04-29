@@ -3,21 +3,18 @@
     "Slug": "datamol-smiles2canonical",
     "Status": "Ready",
     "Title": "Converter of SMILES in Canonical, Selfie, Inchi, Inchi Key form",
-    "Description": "Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey\n",
+    "Description": "Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Representation",
+    "Subtask": "Featurization",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Representation",
-    "Subtask": "Featurization",
-    "Biomedical Area": [
-        "Any"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
     "Output": [
         "Compound"
     ],
@@ -27,20 +24,23 @@
     "Tag": [
         "Chemical notation"
     ],
-    "Publication": "https://doc.datamol.io/stable/tutorials/Preprocessing.html",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2022,
+    "Publication": "https://doc.datamol.io/stable/tutorials/Preprocessing.html",
     "Source Code": "https://github.com/datamol-org/datamol",
     "License": "Apache-2.0",
     "Contributor": "carcablop",
     "Incorporation Date": "2023-01-25",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7qga",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip",
-    "Deployment": [
-        "Local"
     ]
 }
