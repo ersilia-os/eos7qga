@@ -23,10 +23,9 @@ def my_model(smiles_list):
        rmol= _preprocess(smi) 
        list_standar_smile.append(get_standard_smiles(rmol)) #get the smiles standard 
        list_selfie_smile.append(get_selfies_smiles(rmol)) #get the selfies
-       list_inchi_smile.append(get_inchi_smile(rmol)) #get the inchi
        list_inchi_key_smile.append(get_inchi_key(rmol)) #get the inchi_key
     
-    dict={'standard_smiles':list_standar_smile, 'selfie': list_selfie_smile, 'inchi':list_inchi_smile, 'inchikey': list_inchi_key_smile}
+    dict={'standard_smiles':list_standar_smile, 'selfie': list_selfie_smile, 'inchikey': list_inchi_key_smile}
     df=pd.DataFrame(dict)
     #write in .csv 
     df.to_csv(output_file, index=False)
