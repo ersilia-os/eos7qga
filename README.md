@@ -46,9 +46,9 @@ Below are the **Output Columns** of the model:
 - **Image Size (Mb):** `672.77`
 
 **Computational Performance (seconds):**
-- 4 inputs: `33.15`
-- 20 inputs: `23.06`
-- 100 inputs: `24.11`
+- 10 inputs: `33.15`
+- 100 inputs: `22.76`
+- 10000 inputs: `23.16`
 
 ### References
 - **Source Code**: [https://github.com/datamol-org/datamol](https://github.com/datamol-org/datamol)
