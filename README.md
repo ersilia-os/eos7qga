@@ -43,12 +43,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `727`
-- **Image Size (Mb):** `672.77`
+- **Image Size (Mb):** `673.08`
 
 **Computational Performance (seconds):**
-- 10 inputs: `33.15`
-- 100 inputs: `22.76`
-- 10000 inputs: `23.16`
+- 10 inputs: `32.64`
+- 100 inputs: `23.4`
+- 10000 inputs: `396.8`
 
 ### References
 - **Source Code**: [https://github.com/datamol-org/datamol](https://github.com/datamol-org/datamol)
