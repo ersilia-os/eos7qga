@@ -37,6 +37,8 @@
     "License": "Apache-2.0",
     "Contributor": "carcablop",
     "Incorporation Date": "2023-01-25",
+    "Last Packaging Date": "2025-10-16",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7qga",
     "Docker Architecture": [
@@ -45,11 +47,11 @@
     ],
     "Model Size": 1.0,
     "Environment Size": 741.0,
-    "Image Size": 673.08,
-    "Computational Performance 1": 32.64,
-    "Computational Performance 2": 22.32,
-    "Computational Performance 3": 23.4,
-    "Computational Performance 4": 91.58,
-    "Computational Performance 5": 396.8,
+    "Image Size": 690.14,
+    "Computational Performance 1": 29.01,
+    "Computational Performance 2": 18.61,
+    "Computational Performance 3": 18.85,
+    "Computational Performance 4": 32.91,
+    "Computational Performance 5": 96.61,
     "Docker Pack Method": "FastAPI"
 }
