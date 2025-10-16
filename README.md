@@ -4,6 +4,7 @@ Using the Datamol package, the model receives a SMILE as input, then goes throug
 
 This model was incorporated on 2023-01-25.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos7qga`
@@ -13,7 +14,7 @@ This model was incorporated on 2023-01-25.
 - **Task:** `Representation`
 - **Subtask:** `Featurization`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Chemical notation`
 
 ### Input
