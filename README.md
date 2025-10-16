@@ -2,8 +2,7 @@
 
 Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey
 
-This model was incorporated on 2023-01-25.
-
+This model was incorporated on 2023-01-25.Last packaged on 2025-10-16.
 
 ## Information
 ### Identifiers
@@ -44,12 +43,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `741`
-- **Image Size (Mb):** `673.08`
+- **Image Size (Mb):** `690.14`
 
 **Computational Performance (seconds):**
-- 10 inputs: `32.64`
-- 100 inputs: `23.4`
-- 10000 inputs: `396.8`
+- 10 inputs: `29.01`
+- 100 inputs: `18.85`
+- 10000 inputs: `96.61`
 
 ### References
 - **Source Code**: [https://github.com/datamol-org/datamol](https://github.com/datamol-org/datamol)
