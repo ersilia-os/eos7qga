@@ -2,7 +2,7 @@
 
 Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey
 
-This model was incorporated on 2023-01-25.Last packaged on 2025-10-16.
+This model was incorporated on 2023-01-25.Last packaged on 2026-03-26.
 
 ## Information
 ### Identifiers
@@ -37,18 +37,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7qga](https://hub.docker.com/r/ersiliaos/eos7qga)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `724`
-- **Image Size (Mb):** `690.14`
+- **Image Size (Mb):** `692.59`
 
 **Computational Performance (seconds):**
-- 10 inputs: `29.01`
-- 100 inputs: `18.85`
-- 10000 inputs: `96.61`
+- 10 inputs: `29.16`
+- 100 inputs: `19.22`
+- 10000 inputs: `93.98`
 
 ### References
 - **Source Code**: [https://github.com/datamol-org/datamol](https://github.com/datamol-org/datamol)
