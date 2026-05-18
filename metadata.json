@@ -30,7 +30,7 @@
     "Target Organism": [
         "Any"
     ],
-    "Publication Type": "Peer reviewed",
+    "Publication Type": "Other",
     "Publication Year": 2022,
     "Publication": "https://doc.datamol.io/stable/tutorials/Preprocessing.html",
     "Source Code": "https://github.com/datamol-org/datamol",
