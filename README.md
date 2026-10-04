@@ -1,6 +1,6 @@
 # Converter of SMILES in Canonical, Selfie, Inchi Key form
 
-Using the Datamol package, the model receives a SMILE as input, then goes through a process of sanitizing and standardization of the molecule to generate four outputs: Canonical SMILES, SELFIES, InChI and InChIKey
+Converts a SMILES string into three alternative encodings of the same molecule: a standardised canonical SMILES, a SELFIES string in which every sequence is guaranteed valid, and an InChIKey suitable as a database lookup handle. Sanitisation and standardisation with Datamol precede the conversion, so inconsistently written inputs resolve to a common form. The transformation is deterministic and lossless with respect to the structure, changing only how it is written.
 
 This model was incorporated on 2023-01-25.Last packaged on 2026-03-26.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-01-25.Last packaged on 2026-03-26.
 ### Output
 - **Output Dimension:** `3`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Compound represented in its canonical SMILES, SELFIES, and InChIKey forms
+- **Interpretation:** The molecule expressed as standardised SMILES, SELFIES and InChIKey.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
