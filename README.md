@@ -3,7 +3,7 @@
 Converts a SMILES string into three alternative encodings of the same molecule, a standardised canonical SMILES, a SELFIES string in which every sequence is guaranteed to be a valid structure, and an InChIKey suitable as a database lookup handle. Datamol sanitises and standardises the input first, so inconsistently written molecules resolve to a common form and it is that standardised structure the three strings describe. Everything is rule-based and deterministic, with no model or training involved.
 
 This model was incorporated on 2023-01-25.
-Last packaged on 2026-03-26.
+Last packaged on 2026-11-19.
 
 ## Information
 ### Identifiers
@@ -38,18 +38,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7qga](https://hub.docker.com/r/ersiliaos/eos7qga)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7qga.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `723`
-- **Image Size (Mb):** `692.59`
+- **Image Size (Mb):** `234.51`
 
 **Computational Performance (seconds):**
-- 10 inputs: `29.16`
-- 100 inputs: `19.22`
-- 10000 inputs: `93.98`
+- 10 inputs: `26.02`
+- 100 inputs: `16.19`
+- 10000 inputs: `99.95`
 
 ### References
 - **Source Code**: [https://github.com/datamol-org/datamol](https://github.com/datamol-org/datamol)
